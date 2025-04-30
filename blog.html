@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Erbay Portfolio</title>
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    
+    <style>
+        
+        .blog-post-card img {
+            height: 200px; 
+            object-fit: cover;
+        }
+        .card-title a {
+             color: inherit; 
+             text-decoration: none;
+        }
+        .card-title a:hover {
+            color: #ffd700; 
+        }
+         
+        .footer {
+            background-color: #2c2c2c; 
+            color: #ffffff;
+        }
+         .footer-col {
+            background-color: #3a3a3a; 
+            color: #ffffff;
+         }
+         .footer-col h4 {
+            color: #ffd700; 
+         }
+         .footer-col p, .footer-col ul li a, .footer-social a {
+            color: #ffffff;
+         }
+         .footer-col ul li a:hover, .footer-social a:hover {
+            color: #dddddd;
+         }
+    </style>
+</head>
+<body>
+
+   
+    <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu" aria-expanded="false">
+        <i class="fas fa-bars"></i> 
+    </button>
+
+    
+    <nav id="main-nav">
+        
+        <button class="close-menu" id="close-menu" aria-label="Close Menu">
+            <i class="fas fa-times"></i> 
+        </button>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li> 
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+             <li><a href="index.html#contact">Contact</a></li> 
+        </ul>
+    </nav>
+
+    
+    <section class="profile-banner py-4" style="margin-top: 0;"> 
+       <div class="container">
+            <h2 class="text-center mb-0">Our Blog</h2>
+       </div>
+    </section>
+
+   
+    <main class="py-5" style="background-color: #2c2c2c;">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Blog Post 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100 text-white blog-post-card" style="background-color: #3a3a3a; border: none;">
+                        <img src="img/Wedding Outdor.webp" class="card-img-top" alt="Blog Post 1 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><a href="article.html">Tips Fotografi Pernikahan di Outdoor</a></h5>
+                            <p class="card-text text-muted small mb-2">By Erbay | October 26, 2023 | <a href="#" class="text-muted">Photography</a> | <i class="fas fa-comments"></i> 2</p>
+                            <p class="card-text">Pelajari cara mendapatkan hasil maksimal dari pemotretan pernikahan di luar ruangan, mengatasi tantangan pencahayaan alami...</p>
+                            <a href="article.html" class="btn mt-auto align-self-start" style="background-color: #ffd700; color: #333; border: none;">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100 text-white blog-post-card" style="background-color: #3a3a3a; border: none;">
+                        <img src="img/Wedding Outdor.webp" class="card-img-top" alt="Blog Post 2 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><a href="article.html">Tips Fotografi Pernikahan di Outdoor</a></h5>
+                             <p class="card-text text-muted small mb-2">By Erbay | October 20, 2023 | <a href="#" class="text-muted">Videography</a> | <i class="fas fa-comments"></i> 5</p>
+                            <p class="card-text">Dari color grading hingga pemilihan musik, temukan teknik kunci untuk membuat video pernikahan yang sinematik dan berkesan...</p>
+                            <a href="article.html" class="btn mt-auto align-self-start" style="background-color: #ffd700; color: #333; border: none;">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-md-6">
+                     <div class="card h-100 text-white blog-post-card" style="background-color: #3a3a3a; border: none;">
+                        <img src="img/Wedding Outdor.webp" class="card-img-top" alt="Blog Post 3 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><a href="article.html">Tips Fotografi Pernikahan di Outdoor</a></h5>
+                             <p class="card-text text-muted small mb-2">By Erbay | October 15, 2023 | <a href="#" class="text-muted">Photography</a> | <i class="fas fa-comments"></i> 1</p>
+                            <p class="card-text">Apakah Anda bingung antara lensa prime 50mm, 85mm, atau zoom? Panduan ini membantu Anda memilih lensa potret yang tepat...</p>
+                            <a href="article.html" class="btn mt-auto align-self-start" style="background-color: #ffd700; color: #333; border: none;">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-md-6">
+                    <div class="card h-100 text-white blog-post-card" style="background-color: #3a3a3a; border: none;">
+                        <img src="img/Wedding Outdor.webp" class="card-img-top" alt="Blog Post 4 Image">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"><a href="article.html">Tips Fotografi Pernikahan di Outdoor</a></h5>
+                             <p class="card-text text-muted small mb-2">By Erbay | October 10, 2023 | <a href="#" class="text-muted">Editing</a> | <i class="fas fa-comments"></i> 8</p>
+                            <p class="card-text">Mulai dari mengimpor foto hingga penyesuaian dasar, kuasai alur kerja Adobe Lightroom dengan panduan langkah demi langkah ini...</p>
+                             <a href="article.html" class="btn mt-auto align-self-start" style="background-color: #ffd700; color: #333; border: none;">Read More <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div> 
+
+            
+            <nav aria-label="Blog navigation" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+                 <style> 
+                    .page-link { background-color: #3a3a3a; border-color: #555; color: #eee; }
+                    .page-link:hover { background-color: #4a4a4a; }
+                    .page-item.active .page-link { background-color: #ffd700; border-color: #ffd700; color: #333; }
+                    .page-item.disabled .page-link { background-color: #2c2c2c; border-color: #444; color: #777; }
+                 </style>
+            </nav>
+
+        </div> 
+    </main>
+
+   
+    <footer class="footer">
+        <div class="footer-col">
+            <h4>Ar.Project</h4>
+            <p>
+                They are very gentle and leave no pain. He wanted to see the results
+            </p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Link</h4>
+            <ul>
+                <li><a href="index.html#about">About me</a></li> {/* Adjust links */}
+                <li><a href="index.html#projects">Portfolio</a></li>
+                <li><a href="index.html#testimoni">Testimoni</a></li>
+                <li><a href="index.html#contact">Contact us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Contact</h4>
+            <p>1456, Jl.MitraBatik, Kota Tasikmalaya Jawa Barat</p>
+            <p><a href="mailto:muhamadarbinwt@gmail.com">muhamadarbinwt@gmail.com</a></p>
+            <p>+62 83893314676</p>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   
+    <script src="js/script.js"></script>
+</body>
+</html>

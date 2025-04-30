@@ -1,0 +1,668 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  
+  color: #dadada;
+  line-height: 1.5;
+}
+
+/* Navigasi */
+nav {
+  
+  padding: 0 100px; 
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; 
+}
+
+/* Style link */
+nav ul li a {
+  display: block; 
+  text-decoration: none;
+  color: #ffd700; 
+  padding: 15px 20px; 
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+nav ul li a:hover {
+  background-color: #1c1c1c;
+}
+
+
+nav ul li a.active {
+  background-color: #1c1c1c; 
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #3a3a3a; 
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+
+.hero {
+  display: flex;
+  align-items: flex-end;   
+  justify-content: center; 
+  max-width: 1200px;       
+  margin: 0 auto;          
+  padding: 40px 20px;      
+  background-color: #3a3a3a;
+}
+
+/* Kolom kiri */
+.hero-left {
+  
+  width: 300px;
+  margin-right: 20px;
+  align-self: flex-start; 
+}
+.hero-left h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.hero-left h2 span {
+  color: #aaaaaa;
+  font-weight: 300;
+}
+.yellow-line {
+  width: 60%;
+  height: 3px;
+  background-color: #ffd700;
+  margin: 15px 0 20px;
+}
+.hero-left p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Foto profil (kolom tengah) */
+.hero-image {
+  flex: 0 0 auto; 
+  margin: 0 20px; 
+}
+.hero-image img {
+  width: 450px;     
+  height: auto;
+  display: block;
+  margin-bottom: -40px; 
+}
+
+/* Kolom kanan */
+.hero-right {
+  width: 300px;
+  margin-left: 20px;
+  align-self: flex-start; 
+  margin-top: 60px;      
+}
+.hero-right h3 {
+  color: #ffd700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+.hero-right p {
+  line-height: 1.6;
+}
+
+/* Banner MY PROFILE */
+.profile-banner {
+  background-color: #2c2c2c;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: -40px; 
+}
+.profile-banner h2 {
+  font-size: 2rem;
+  color: #d0d0d0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Responsif: layar sempit */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-left, .hero-right {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    text-align: center;
+    align-self: center;
+  }
+  .hero-image {
+    margin: 20px 0;
+  }
+  .hero-image img {
+    margin-bottom: -20px; 
+  }
+  .profile-banner {
+    margin-top: -20px;
+  }
+}
+
+
+
+/* Bagian Testimoni dan Deskripsi Layanan */
+section.testimoni {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px 40px;
+  justify-content: center;
+  background-color: #2c2c2c;
+ 
+}
+
+section.testimoni article {
+  background-color: #3a3a3a; 
+  flex: 1 1 250px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff; 
+}
+
+/* Judul di dalam card */
+section.testimoni article h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffd700; 
+}
+
+/* Spasi paragraf dalam card */
+section.testimoni article p {
+  margin-bottom: 10px;
+}
+
+/* Kotak kecil untuk rating */
+section.testimoni article .rating {
+  display: inline-block;
+  background-color: #1c1c1c;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Bintang emas di dalam rating */
+section.testimoni article .rating .star {
+  color: #ffd700;
+  margin-left: 5px;
+}
+
+
+/* Bagian Tools */
+section.tools {
+  background-color: #3a3a3a; 
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Judul dan paragraf penjelasan */
+section.tools h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+section.tools p {
+  margin-bottom: 30px; 
+  color: #dddddd;
+}
+
+/* Daftar tools */
+section.tools ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Setiap item tool */
+section.tools ul li {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  color: #ffffff;
+}
+
+/* Gambar tool */
+section.tools ul li img {
+  width: 80px;              
+  height: 80px;            
+  border-radius: 20%;       
+  margin-bottom: 10px;     
+  transition: transform 0.3s;
+  object-fit: cover;        
+}
+
+/* Efek hover pada ikon */
+section.tools ul li img:hover {
+  transform: scale(1.1);
+}
+
+/* Teks nama tool */
+section.tools ul li span {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+
+/* Bagian Why Me */
+.why-me {
+  display: flex;                 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;                    
+  padding: 40px 60px;         
+  color: #ffffff;                
+  background-color: #2c2c2c;     
+}
+
+.why-me-text {
+  flex: 1;                       
+  max-width: 600px;            
+}
+
+.why-me-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.why-me-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Kolom kanan untuk project */
+.projects {
+  display: flex;
+  flex-direction: column;        
+  gap: 20px;
+}
+
+/* Masing-masing card project */
+.projects article {
+  display: flex;
+  align-items: center;           
+  gap: 20px;
+  background-color: #3a3a3a;     
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+/* Gambar dalam card */
+.projects article img {
+  width: 120px;
+  height: 80px;                  
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Teks judul project (Photografi/Videografi) */
+.projects article h3 {
+  color: #ffd700;               
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+/* Teks jumlah project */
+.projects article p {
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Panah di ujung kanan card */
+.arrow {
+  margin-left: auto;             
+  font-size: 1.5rem;
+  color: #ffd700;                
+}
+
+
+
+   .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;  
+    padding: 40px 60px;         
+    color: #ffffff;
+    gap: 20px;
+  }
+  
+  
+  .footer-col {
+    flex: 1 1 200px;            
+    margin: 10px 0;
+  }
+  
+ 
+  .footer-col h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #000000;  
+    font-weight: 700;
+  }
+  
+ 
+  .footer-col {
+    background-color: #cccccc;  
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .footer-col p {
+    margin-bottom: 10px;
+    color: #000000; 
+    line-height: 1.4;
+  }
+  
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-col ul li a {
+    color: #000000;       
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+ 
+  .footer-col ul li a:hover {
+    color: #333333;
+  }
+  
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  
+  .footer-social a {
+    color: #000000;       
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-social a:hover {
+    color: #333333;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+    }
+  }
+  
+ 
+
+      
+      .hamburger-menu {
+        display: none; 
+        position: fixed; 
+        top: 15px;
+        right: 20px;
+        z-index: 1001; 
+        background: none;
+        border: none;
+        font-size: 2rem; 
+        color: #333; 
+        cursor: pointer;
+      }
+
+      
+      @media (max-width: 768px) { 
+        .hamburger-menu {
+          display: block; 
+        }
+
+        nav {
+          position: fixed;
+          top: 0;
+          right: 0;
+          height: 100vh;
+          width: 250px; 
+          background-color: #222; 
+          z-index: 1000;
+          transform: translateX(100%); 
+          transition: transform 0.3s ease-in-out;
+          padding-top: 60px; 
+          box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        }
+
+        nav.active {
+          transform: translateX(0); 
+        }
+
+        nav ul {
+          flex-direction: column; 
+          align-items: flex-start; 
+          padding: 20px;
+          margin-top: 20px; 
+        }
+
+        nav ul li {
+          width: 100%; 
+          margin-bottom: 15px; 
+        }
+
+        nav ul li a {
+          color: #fff; 
+          padding: 10px 15px;
+          display: block; 
+          width: 100%;
+          text-decoration: none;
+          border-radius: 4px;
+          transition: background-color 0.2s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+          background-color: #c19a6b; 
+          color: #222; 
+        }
+
+        
+        .close-menu {
+            display: block; 
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 2rem; 
+            color: #fff; 
+            cursor: pointer;
+        }
+      }
+
+      
+      .close-menu {
+          display: none;
+      }
+
+      
+      body.sidebar-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999; 
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
+      body::before {
+        
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none; 
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      
+.contact-form-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-form-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 32px;
+}
+
+.contact-form-section p {
+  margin-bottom: 30px;
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group label .required {
+  color: #e74c3c; 
+  margin-left: 2px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #c19a5c; 
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+.form-group input.input-error,
+.form-group textarea.input-error {
+  border-color: #e74c3c; 
+  background-color: #fbecea;
+}
+
+.error-message {
+  color: #e74c3c; 
+  font-size: 0.9em;
+  margin-top: 5px;
+  display: none; 
+}
+
+.submit-button {
+  background-color: #c19a5c; 
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #a7844a; 
+}
+
+#form-status {
+  font-weight: bold;
+  text-align: center;
+}
+#form-status.success {
+  color: #2ecc71; 
+}
+#form-status.error {
+  color: #e74c3c; 
+}
